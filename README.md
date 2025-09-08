@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 teylersmuseum.nl
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Topstukken 
   <img src="readme-images/fireShot Capture 001 - Topstukken Teylers Museum - [teylersmuseum.nl].png" width="375px" alt="resultatenpagina">
   <img src="readme-images/fireShot Capture 003 - Topstukken Teylers Museum - [teylersmuseum.nl].png" width="375px" alt="filter bijbehoorende bij resultatenpagina">
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images//fireShot Capture 006 - Tentoonstellingen en activiteiten in Teylers Museum Haarlem_ - [teylersmuseum.nl].png" width="375px" alt="filter bijbehoorende bij resultatenpagina">
+  Zien & doen 
+  <img src="readme-images//fireShot Capture 006 - Tentoonstellingen en activiteiten in Teylers Museum Haarlem_ - [teylersmuseum.nl].png" width="375px" alt="Zien & doen pagina">
 </details>
 
 
