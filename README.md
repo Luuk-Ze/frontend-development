@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 teylersmuseum.nl
   #### Screenshot(s) van de eerste pagina (small screen): 
   Topstukken 
-  <img src="readme-images/fireshot capture 001 - topstukken teylers museum - [teylersmuseum.nl].png" width="375px" alt="resultatenpagina">
-  <img src="readme-images/fireshot capture 003 - topstukken teylers museum - [teylersmuseum.nl].png" width="375px" alt="filter bijbehoorende bij resultatenpagina">
+  <img src="readme-images/fireshotcapture001-topstukkenteylersmuseum-[teylersmuseum.nl].png." width="375px" alt="resultatenpagina">
+  <img src="readme-images/fireshotcapture003-topstukkenteylersmuseum-[teylersmuseum.nl].png" width="375px" alt="filter bijbehoorende bij resultatenpagina">
   #### Screenshot(s) van de tweede pagina (small screen):
   Zien & doen 
-  <img src="readme-images/fireshot capture 006 - tentoonstellingen en activiteiten in teylers museum haarlem_ - [teylersmuseum.nl].png" width="375px" alt="Zien & doen pagina">
+  <img src="readme-images/fireshotcapture006-tentoonstellingenenactiviteiteninteylersmuseumhaarlem_ -[teylersmuseum.nl].png" width="375px" alt="Zien & doen pagina">
 </details>
 
 
@@ -56,6 +56,12 @@ teylersmuseum.nl
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+  1. De wensite maakt gebruik van veel "div" en "script" tags
+  2. Heel goed bruikbaar op elk manier (mobiel,desktop,keyboard-only)
+  3. Website maakt geen gebriik van h1,h2,h3 maar van <title> en <meta name>
+  4. website maakt geen gebruik van list wanneer het wel zou moeten
+  5. De alt text is niet spcifiek genoeg
 
 </details>
 
