@@ -5,23 +5,19 @@
   box-sizing:border-box;  
 }
 
-
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-background-header-ondtdek:#91B37E;
+	--color-background-footer-ondtdek:#1A2F38;
+	--color-teylers-wit: #F4ECDD;
+	--color-collectie-header: #37A9E2;
+	--color-collectie-filter: #FFCC01;
 }
-
-
-
-
 
 /****************/
 /* JOUW STYLING */
@@ -29,3 +25,272 @@
 
 /* jouw code */
 
+/*
+color-backgroud
+
+background-img blend. 
+background-img gradient
+*/
+
+body {
+	background-color: var(--color-background-footer-ondtdek);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Larken", sans-serif;
+}
+
+p{
+    color: white;
+}
+
+
+@font-face {
+	font-family: Larken;
+	src: url(fonts/larkendemo-medium.otf)(format("otf"))
+}
+
+:root {
+	padding: 0;
+	margin: 0;
+}
+
+
+header article {
+	padding-left: 1em;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	padding-bottom: 5em;
+}
+
+header h1{
+	grid-row: 5 / 2;
+}
+
+header h2{
+	grid-row: 2 / 1;
+}
+
+footer{
+	background-color: var(--color-background-footer-ondtdek);
+	color:var(--color-teylers-wit)
+}
+
+footer img:nth-of-type(1){
+	max-width: 45%;
+	max-height: 45%;
+	padding-top: 4em;
+	padding-left: 2em;
+}
+	
+footer article{
+    padding-left: 1.5em;
+	background-color: var(--color-background-footer-ondtdek);
+    padding-right: 2em;
+}
+
+footer section{
+    background-color: #BD1C1E;
+    padding-left: 1.5em;
+}
+
+footer section nav {
+    background-color: #BD1C1E;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer section a {
+    padding-top: 2em;
+}
+
+footer article nav svg {
+    display: flex;
+    justify-content: space-between;
+}
+/* volgende code gemaakt samen met studentassistent*/
+footer article nav svg {
+    max-height: 2.4em;
+    aspect-ratio: 1; 
+    background-color: white;
+    color: var(--color-background-footer-ondtdek);
+    border-radius: 50%;
+    padding-bottom: 0.6em;
+    padding-top: 0.6em;
+}
+
+footer article input{
+    border-color:  1em ,var(--color-teylers-wit);
+    background-color: var(--color-background-footer-ondtdek);
+    transition: 1s ease-in-out;
+    color: var(--color-teylers-wit);
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+footer button {
+    margin-bottom: 2em;
+}
+
+footer section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    padding-right: 2em;
+}
+
+footer article nav {
+	width: 10em;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.5em;
+}
+
+footer h3 {
+	font-weight: normal;
+}
+
+footer nav svg:hover {
+	scale: 1.5;
+	transition: .5s ease-in;
+}
+
+footer h3:nth-of-type(2) {
+	font-weight: bolder;
+}
+
+footer h3:nth-of-type(3) {
+	font-weight: bolder;
+}
+
+footer article h3 {
+	padding-top: 2em;
+}
+
+footer button {
+	padding: 1em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	background-color: var(--color-teylers-wit);
+	font-size: large;
+	box-shadow: none;
+}
+
+article nav {
+    display: flex;
+}
+
+
+article ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+h3{
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+button:hover{
+	background-color: transparent;
+	transition: .5s ease-in;
+}
+
+header img {
+    max-width: 12%;
+    max-height: 12%;
+    position: absolute;
+    left: 0.6rem;
+    top: 0.6rem;
+}
+
+header section svg {
+    max-width: 9%;
+    max-height: 9%;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    color: white;
+}
+
+/* code over warning tape is gemaakt met gebruik van AI en met overzicht van een studentassistent */
+.warning-tape{
+  /* Instelbare variabelen */
+  --angle: -45deg;        /* hoek van de strepen */
+  --stripe: 14px;        /* breedte per kleur */
+  --yellow: #fff;     /* geel */
+  --black:  transparent;        /* zwart */
+
+  width: 100%;
+  height: 30px;
+
+  background:
+    repeating-linear-gradient(
+      var(--angle),
+      var(--yellow) 0 calc(var(--stripe)),
+      var(--black)  calc(var(--stripe)) calc(var(--stripe)*2)
+    );
+}
+
+
+
+/* NOTES VAN LES OVER MENU BUTTON + ANIMATION
+
+nav button {
+	font-size: 1rem;
+	
+	width: 3em;
+	aspect-ratio: 2/3;
+
+	padding: 0;
+	margin: 0;
+
+	border: none;
+	background-color: aqua;
+
+	display: grid;
+}
+
+nav button span{
+	display: block;
+	width: 1.5em;
+	height: .2em;
+	background-color: blueviolet;
+
+	border-radius: .1em;
+
+	grid-row-start:1;
+	grid-column-start: 1;
+
+	transition: 0.5s;
+}
+
+button span:nth-child(1) {
+	translate: 0 - 0.5em;
+}
+
+button span:nth-child(2) {
+	translate:0;
+	rotate:45deg;
+	
+}
+
+button span:nth-child(3) {
+	translate:0;
+	rotate:-45deg
+} */

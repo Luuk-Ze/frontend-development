@@ -1,0 +1,404 @@
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background-header-ondtdek:#91B37E;
+	--color-background-footer-ondtdek:#1A2F38;
+}
+
+body {
+    background-color: var(--color-background-footer-ondtdek);
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p{
+    color: white;
+}
+
+footer article{
+    padding-left: 1.5em;
+}
+
+header nav {
+    height: 0vh;
+    width: 0vw;
+    background-color: wheat;
+    display: none;
+}  
+
+header{
+    background-color: var(--color-background-header-ondtdek);
+}
+
+header section {
+    min-width: 100%;
+    padding-bottom: 10em;
+    background-image: url("../images//squared-flower.svg");
+    background-repeat: repeat;
+}
+
+header div {
+    	background-image:
+		linear-gradient(
+			rgba(0, 0, 0, 0.768),
+        	rgba(0, 0, 0, 0.219),
+			transparent
+		);
+}
+/*	background-image:
+		linear-gradient(
+			rgb(0 0 0 / .5), 
+			transparent 8em calc(100% - 8em),
+			rgb(0 0 0 / .5)
+		); */
+
+header a, header button {
+    justify-self: start;
+}
+
+footer section{
+    background-color: #BD1C1E;
+    padding-left: 1.5em;
+}
+
+footer section nav {
+    background-color: #BD1C1E;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer section a {
+    padding-top: 2em;
+}
+
+footer article{
+    background-color: var(--color-background-footer-ondtdek);
+    padding-right: 2em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+main ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 0;
+}
+
+header ul {
+    display: none;
+}
+
+header button {
+    border-radius: 9em;
+    min-width: 7em;
+    min-height: 3em;
+    grid-row: 6/7;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h2:nth-of-type(1){
+    font-family: larken;
+}
+
+main a {
+    background-color: var(--color-background-footer-ondtdek);
+}
+
+
+a :hover {
+    background-color: white;
+}
+
+ul {
+    display: flex;
+    gap: 1em;
+
+}
+
+footer article nav svg {
+    display: flex;
+    justify-content: space-between;
+}
+/* volgende code gemaakt samen met studentassistent*/
+footer article nav svg {
+    max-height: 2.4em;
+    aspect-ratio: 1; 
+    background-color: white;
+    color: var(--color-background-footer-ondtdek);
+    border-radius: 50%;
+    padding-bottom: 0.6em;
+    padding-top: 0.6em;
+}
+
+footer article input{
+    border-bottom:  2px,#BD1C1E;
+    background-color: var(--color-background-footer-ondtdek);
+    transition: 0.4s ease-in-out;
+    color: white;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+footer button {
+    margin-bottom: 2em;
+}
+
+article nav a {
+    background-color: transparent;
+    list-style-type: none;
+}
+
+
+article nav {
+    display: flex;
+    list-style-type: none;
+}
+
+header a {
+    color: #EAE3D5;
+    padding: 0.7em 2em
+}
+
+header img {
+    max-width: 12%;
+    max-height: 12%;
+    position: absolute;
+    left: 0.6rem;
+    top: 0.6rem;
+}
+
+section svg {
+    max-width: 9%;
+    max-height: 9%;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    color: white;
+}
+/* dankjewel Sanne!*/
+main li {
+	background-color:pink;
+	
+	display:grid;
+
+	
+	
+	width:100%;
+	aspect-ratio:1/1;
+	
+	overflow:hidden;
+
+    height: 35em;
+}
+
+li article {
+	grid-column-start:1;
+	grid-row-start:1;
+	
+	z-index:1;
+	
+	color:white;
+	
+	padding:1em;
+	display:grid;
+    grid-template-rows: 5em auto auto auto auto auto;
+    grid-template-columns: auto;
+	
+	position:relative;
+}
+
+li article::before {
+	content:"";
+/* 	background-color:pink; */
+	
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	
+	z-index:-1;
+	
+	background-image:
+		linear-gradient(
+			rgba(0, 0, 0, 0.7), 
+			transparent 8em calc(100% - 8em),  /* moeilijk */
+			rgb(0 0 0 / .7)
+		);
+}
+
+li a, li img {
+	grid-column-start:1;
+	grid-row-start:1;
+	
+	max-width:100%;
+	height:100%;
+	object-fit:cover;
+	
+	transition:.5s;
+}
+
+li:hover img {
+	scale:1.1;
+}
+
+/*----------------------------------*/
+
+main li h2 {
+    grid-row-start: 8;
+    margin: 0;
+    font-size: xx-large;
+}
+
+main li h3 {
+    grid-row-start: 7;
+    margin: 0;
+    font-size: large;
+}
+
+li a {
+    z-index: 0;
+}
+/*
+main ul li:nth-child(1) {
+    width: 100%;
+    min-height:33em;
+    background-image: url("../images/het-oudste-musesum-van-nederland.png");
+    background-size: cover;
+}
+
+main ul li:nth-child(2)  {
+    width: 100%;
+    min-height:33em;
+    background-image: url("../images/mannen-van-michelangelo.png");
+    background-size: cover;
+}
+
+main ul li:nth-child(3)  {
+    width: 100%;
+    min-height:33em;
+    background-image: url("../images/de-loretz-formule.png");
+    background-size: cover;
+}
+
+main ul li:nth-child(4)  {
+    width: 100%;
+    min-height:33em;
+    background-image: url("../images/kunst-en-vliegwerk.png");
+    background-size: cover;
+}
+
+main ul li:nth-child(5)  {
+    width: 100%;
+    min-height:33em;
+    background-image: url("../images/museaumnacht-kids.png");
+    background-size: cover;
+}
+
+main ul li:nth-child(6)  {
+    width: 100%;
+    min-height:33em;
+    background-image: url("../images/special-guests.png");
+    background-size: cover;
+}
+*/
+/*DIV om article's heen
+
+li div & li img:
+
+grid-column-start: 1
+grid-row-start:1
+
+li:
+display:grid
+width:100%
+aspect ratio 1/1
+overflow:hidden
+
+Li div:
+z-index: 1
+color white
+
+display flex
+felx-direction column
+justify-content space-betweeen
+
+li img:
+max-width:100%
+height:100%
+object-fit-cover
+
+transition:.5s
+
+li;hover img:
+scale:1.1
+*/
+
+/* code over warning tape is gemaakt met gebruik van AI en met overzicht van een studentassistent */
+.warning-tape{
+  /* Instelbare variabelen */
+  --angle: -45deg;        /* hoek van de strepen */
+  --stripe: 14px;        /* breedte per kleur */
+  --yellow: #fff;     /* geel */
+  --black:  transparent;        /* zwart */
+
+  width: 100%;
+  height: 30px;
+
+  background:
+    repeating-linear-gradient(
+      var(--angle),
+      var(--yellow) 0 calc(var(--stripe)),
+      var(--black)  calc(var(--stripe)) calc(var(--stripe)*2)
+    );
+}
+
+header a:nth-of-type(1) {
+    background-color: var(--color-background-footer-ondtdek);
+}
+
+h1, h2, h3, h4, p{
+    font-family: "Larken";
+    color: white;
+}
+
+header h1, header h2 {
+    color: var(--color-background-footer-ondtdek);
+}
+
+footer section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    padding-right: 2em;
+}
+
+footer article ul {
+    padding-right: 2em;
+}
+
+article ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+p {
+    margin-bottom: 0em;
+}
