@@ -2,7 +2,7 @@
 	/* startje */
 	--color-text:#111;
 	--color-background-header-ondtdek:#91B37E;
-	--color-background-footer-ondtdek:#1A2F38;
+	--color-background-footer-ondtdek:hsl(198, 37%, 16%);
 	--color-teylers-wit: #F4ECDD;
 	--color-collectie-header: #37A9E2;
 	--color-collectie-filter: #FFCC01;
@@ -30,6 +30,44 @@ header div {
 		);
 }
 
+header h1{
+    padding-left: 0.5em;
+}
+
+header h2{
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+}
+
+.witruimte{
+    height: 3em;
+    color: var(--color-collectie-header);
+}
+
+header a, header button {
+    display: flex;
+    flex-direction: column;
+}
+
+header a:nth-of-type(1) {
+    margin-left: 1em;
+    margin-bottom: 1em;
+    max-width:fit-content;
+    background-color: #1A2F38;
+    color: var(--color-teylers-wit);
+    font-size: large;
+}
+
+header a:nth-of-type(2) {
+    border-bottom: 2em;
+    color: #1A2F38;
+    background-color: var(--color-teylers-wit);
+    max-width:fit-content;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    font-size: large;
+}
+
 main {
     padding-left: 2em;
     padding-right: 2em;
@@ -39,12 +77,8 @@ article{
     color: white;
 }
 
-main div {
-    display: flex;
-    justify-content: center;
-}
 
-main button{
+.filterButton{
     position: sticky;
     bottom: 0;
     background-color: var(--color-collectie-filter);
@@ -64,6 +98,7 @@ main svg{
     max-height: 10%;
 }
 
+/*
 main section{
     background-color: white;
     color: darkblue;
@@ -122,6 +157,179 @@ main section ul div svg.de-active{
     right: 0;
     top: 0;
 }
+*/
+
+
+main div{
+    display: grid;
+    font-size: large;
+}
+
+main div input:nth-of-type(2) {
+/* 	background-color:green; */
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.tweede-input {
+  grid-row: 2 / 4;
+}
+
+main div summary{
+    border-bottom: 2em black;
+}
+
+
+form {
+	background-color:var(--color-teylers-wit);
+	
+	max-height:100vh;
+	
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	overflow-y:auto;
+	
+	translate:0 100%;
+	
+	transition:.5s;
+	
+	
+	display:flex;
+	flex-direction:column;
+	
+/* 	display:grid; */
+/* 	grid-template-columns:1fr max-content; */
+	
+}
+
+
+main search input:nth-of-type(1)::placeholder {
+  font-size: x-large;
+  opacity: 0.5;
+}
+
+main search input:nth-of-type(1){
+    padding-top: 1em;
+    width: 28em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+search {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    padding-top: 1em;
+}
+
+input {
+    background-color: var(--color-teylers-wit);
+}
+
+
+form search,
+form > label,
+form details {
+	grid-column:span 2;
+}
+
+
+form.is-open {
+	translate:0 0;
+}
+
+details label {
+	display:block;
+}
+
+summary {
+	list-style:none;
+	
+	padding:.5em;
+	
+	display:flex;
+	justify-content:space-between;
+
+    padding-bottom: 2em;
+}
+
+summary::after {
+	content:"▼";
+	transition:.5s;
+}
+
+details[open] summary::after  {
+	rotate:180deg;
+}
+
+
+form div {
+	padding:1em;
+}
+
+
+main section form div:nth-of-type(1) {
+ 	background-color:var(--color-teylers-wit);
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+    padding-bottom: 0em;
+    padding-top: 0em;
+    padding-right: 0em;
+}
+
+main section form div:nth-of-type(1) button {
+    justify-content: flex-end;
+    border: none;
+    background-color: var(--color-teylers-wit);
+    font-size: x-large;
+    padding-left: 11em;
+    font-family: "larken";
+    color: var(--color-text);
+}
+main section form div:nth-of-type(2) {
+/* 	background-color:green; */
+	flex-grow:1;
+	
+	overflow:auto;
+}
+
+main section form div:nth-of-type(3) {
+	background-color:var(--color-background-footer-ondtdek);
+	display:flex;
+	align-items:center;
+    justify-content: center;
+	
+}
+
+main section form div:nth-of-type(3) button {
+    left: 0;
+    right: 0;
+    width: 90%;
+    font-size: medium;
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
+    align-self: center;
+    background-color: var(--color-teylers-wit);
+    border: none;
+}
+div input {
+    border:none;
+    border-bottom-width: .1rem;
+    color: var(--color-text);
+    background-color: var(--color-teylers-wit);
+}
+
+
 
 li span {
     width: 100%;

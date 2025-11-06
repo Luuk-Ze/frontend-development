@@ -17,6 +17,7 @@
 	--color-teylers-wit: #F4ECDD;
 	--color-collectie-header: #37A9E2;
 	--color-collectie-filter: #FFCC01;
+    --color-collectie-blauw: #1A2F38
 }
 
 /****************/
@@ -37,9 +38,6 @@ body {
     margin: 0;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: "Larken", sans-serif;
-}
 
 p{
     color: white;
@@ -47,15 +45,16 @@ p{
 
 
 @font-face {
-	font-family: Larken;
-	src: url(fonts/larkendemo-medium.otf)(format("otf"))
+  font-family: 'Larken';
+    src: url('../fonts/larkendemo-medium.otf') format('opentype');
+
 }
+
 
 :root {
 	padding: 0;
 	margin: 0;
 }
-
 
 header article {
 	padding-left: 1em;
@@ -65,6 +64,45 @@ header article {
 	padding-bottom: 5em;
 }
 
+header button {
+	padding: 0.5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	background-color: var(--color-teylers-wit);
+	box-shadow: none;
+    border: none;
+}
+
+header a {
+    padding: 0.5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	background-color: var(--color-teylers-wit);
+	box-shadow: none;
+}
+
+
+header img {
+    max-width: 12%;
+    max-height: 12%;
+    position: absolute;
+    left: 0.6rem;
+    top: 0.6rem;
+}
+
+header section svg {
+    max-width: 9%;
+    max-height: 9%;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    color: white;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Larken", sans-serif;
+}
+
 header h1{
 	grid-row: 5 / 2;
 }
@@ -72,6 +110,32 @@ header h1{
 header h2{
 	grid-row: 2 / 1;
 }
+
+h3{
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+/*
+main div section  {
+
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	overflow-y:auto;
+	
+	translate:0 100%;
+	
+	transition:.5s;
+	
+	display:flex;
+	flex-direction:column;
+	
+} */
+
 
 footer{
 	background-color: var(--color-background-footer-ondtdek);
@@ -96,16 +160,16 @@ footer section{
     padding-left: 1.5em;
 }
 
+footer section a {
+    padding-top: 2em;
+}
+
 footer section nav {
     background-color: #BD1C1E;
     padding-bottom: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-footer section a {
-    padding-top: 2em;
 }
 
 footer article nav svg {
@@ -126,12 +190,13 @@ footer article nav svg {
 footer article input{
     border-color:  1em ,var(--color-teylers-wit);
     background-color: var(--color-background-footer-ondtdek);
-    transition: 1s ease-in-out;
+    transition: 1s ease-in;
     color: var(--color-teylers-wit);
 }
 
 input[type=text]:focus {
-  width: 100%;
+  min-width: 100%;
+  transition: 1s ease-in;
 }
 
 footer button {
@@ -174,12 +239,30 @@ footer article h3 {
 }
 
 footer button {
-	padding: 1em;
+	padding: 0.75em;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 	background-color: var(--color-teylers-wit);
 	font-size: large;
-	box-shadow: none;
+	border: none;
+}
+
+footer input::placeholder {
+  font-size: large;
+  opacity: 0.5;
+}
+
+footer input{
+    padding-top: 1em;
+    width: 28em
+}
+
+footer ul li input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 article nav {
@@ -201,31 +284,10 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-h3{
-	margin-top: 0em;
-	margin-bottom: 0em;
-}
 
 button:hover{
 	background-color: transparent;
 	transition: .5s ease-in;
-}
-
-header img {
-    max-width: 12%;
-    max-height: 12%;
-    position: absolute;
-    left: 0.6rem;
-    top: 0.6rem;
-}
-
-header section svg {
-    max-width: 9%;
-    max-height: 9%;
-    position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
-    color: white;
 }
 
 /* code over warning tape is gemaakt met gebruik van AI en met overzicht van een studentassistent */
@@ -246,51 +308,3 @@ header section svg {
       var(--black)  calc(var(--stripe)) calc(var(--stripe)*2)
     );
 }
-
-
-
-/* NOTES VAN LES OVER MENU BUTTON + ANIMATION
-
-nav button {
-	font-size: 1rem;
-	
-	width: 3em;
-	aspect-ratio: 2/3;
-
-	padding: 0;
-	margin: 0;
-
-	border: none;
-	background-color: aqua;
-
-	display: grid;
-}
-
-nav button span{
-	display: block;
-	width: 1.5em;
-	height: .2em;
-	background-color: blueviolet;
-
-	border-radius: .1em;
-
-	grid-row-start:1;
-	grid-column-start: 1;
-
-	transition: 0.5s;
-}
-
-button span:nth-child(1) {
-	translate: 0 - 0.5em;
-}
-
-button span:nth-child(2) {
-	translate:0;
-	rotate:45deg;
-	
-}
-
-button span:nth-child(3) {
-	translate:0;
-	rotate:-45deg
-} */

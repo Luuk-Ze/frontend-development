@@ -18,10 +18,6 @@ p{
     color: white;
 }
 
-footer article{
-    padding-left: 1.5em;
-}
-
 header nav {
     height: 0vh;
     width: 0vw;
@@ -33,11 +29,36 @@ header{
     background-color: var(--color-background-header-ondtdek);
 }
 
+header ul {
+    display: none;
+}
+
+header button {
+    border-radius: 9em;
+    min-width: 7em;
+    min-height: 3em;
+    grid-row: 6/7;
+    margin-top: 2em;
+}
+
 header section {
     min-width: 100%;
     padding-bottom: 10em;
     background-image: url("../images//squared-flower.svg");
     background-repeat: repeat;
+}
+
+header a {
+    color: #EAE3D5;
+    padding: 0.7em 2em
+}
+
+header img {
+    max-width: 12%;
+    max-height: 12%;
+    position: absolute;
+    left: 0.6rem;
+    top: 0.6rem;
 }
 
 header div {
@@ -59,138 +80,19 @@ header a, header button {
     justify-self: start;
 }
 
-footer section{
-    background-color: #BD1C1E;
-    padding-left: 1.5em;
-}
-
-footer section nav {
-    background-color: #BD1C1E;
-    padding-bottom: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-footer section a {
-    padding-top: 2em;
-}
-
-footer article{
-    background-color: var(--color-background-footer-ondtdek);
-    padding-right: 2em;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-main ul {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    gap: 0;
-}
-
-header ul {
-    display: none;
-}
-
-header button {
-    border-radius: 9em;
-    min-width: 7em;
-    min-height: 3em;
-    grid-row: 6/7;
-}
-
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-h2:nth-of-type(1){
-    font-family: larken;
-}
-
-main a {
+header a:nth-of-type(1) {
     background-color: var(--color-background-footer-ondtdek);
 }
 
-
-a :hover {
-    background-color: white;
+h1, h2, h3, h4, p{
+    font-family: "Larken";
+    color: white;
 }
 
-ul {
-    display: flex;
-    gap: 1em;
-
-}
-
-footer article nav svg {
-    display: flex;
-    justify-content: space-between;
-}
-/* volgende code gemaakt samen met studentassistent*/
-footer article nav svg {
-    max-height: 2.4em;
-    aspect-ratio: 1; 
-    background-color: white;
+header h1, header h2 {
     color: var(--color-background-footer-ondtdek);
-    border-radius: 50%;
-    padding-bottom: 0.6em;
-    padding-top: 0.6em;
 }
 
-footer article input{
-    border-bottom:  2px,#BD1C1E;
-    background-color: var(--color-background-footer-ondtdek);
-    transition: 0.4s ease-in-out;
-    color: white;
-}
-
-input[type=text]:focus {
-  width: 100%;
-}
-
-footer button {
-    margin-bottom: 2em;
-}
-
-article nav a {
-    background-color: transparent;
-    list-style-type: none;
-}
-
-
-article nav {
-    display: flex;
-    list-style-type: none;
-}
-
-header a {
-    color: #EAE3D5;
-    padding: 0.7em 2em
-}
-
-header img {
-    max-width: 12%;
-    max-height: 12%;
-    position: absolute;
-    left: 0.6rem;
-    top: 0.6rem;
-}
-
-section svg {
-    max-width: 9%;
-    max-height: 9%;
-    position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
-    color: white;
-}
 /* dankjewel Sanne!*/
 main li {
 	background-color:pink;
@@ -275,112 +177,106 @@ main li h3 {
 li a {
     z-index: 0;
 }
-/*
-main ul li:nth-child(1) {
-    width: 100%;
-    min-height:33em;
-    background-image: url("../images/het-oudste-musesum-van-nederland.png");
-    background-size: cover;
+
+main div {
+    background-color: var(--color-background-header-ondtdek);
 }
 
-main ul li:nth-child(2)  {
-    width: 100%;
-    min-height:33em;
-    background-image: url("../images/mannen-van-michelangelo.png");
-    background-size: cover;
+main div h2, main div p, main div label, main div summary {
+    color: var(--color-background-footer-ondtdek);
+    font: large;
 }
 
-main ul li:nth-child(3)  {
-    width: 100%;
-    min-height:33em;
-    background-image: url("../images/de-loretz-formule.png");
-    background-size: cover;
+footer section{
+    background-color: #BD1C1E;
+    padding-left: 1.5em;
 }
 
-main ul li:nth-child(4)  {
-    width: 100%;
-    min-height:33em;
-    background-image: url("../images/kunst-en-vliegwerk.png");
-    background-size: cover;
+footer section nav {
+    background-color: #BD1C1E;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-main ul li:nth-child(5)  {
-    width: 100%;
-    min-height:33em;
-    background-image: url("../images/museaumnacht-kids.png");
-    background-size: cover;
+footer section a {
+    padding-top: 2em;
 }
 
-main ul li:nth-child(6)  {
-    width: 100%;
-    min-height:33em;
-    background-image: url("../images/special-guests.png");
-    background-size: cover;
-}
-*/
-/*DIV om article's heen
-
-li div & li img:
-
-grid-column-start: 1
-grid-row-start:1
-
-li:
-display:grid
-width:100%
-aspect ratio 1/1
-overflow:hidden
-
-Li div:
-z-index: 1
-color white
-
-display flex
-felx-direction column
-justify-content space-betweeen
-
-li img:
-max-width:100%
-height:100%
-object-fit-cover
-
-transition:.5s
-
-li;hover img:
-scale:1.1
-*/
-
-/* code over warning tape is gemaakt met gebruik van AI en met overzicht van een studentassistent */
-.warning-tape{
-  /* Instelbare variabelen */
-  --angle: -45deg;        /* hoek van de strepen */
-  --stripe: 14px;        /* breedte per kleur */
-  --yellow: #fff;     /* geel */
-  --black:  transparent;        /* zwart */
-
-  width: 100%;
-  height: 30px;
-
-  background:
-    repeating-linear-gradient(
-      var(--angle),
-      var(--yellow) 0 calc(var(--stripe)),
-      var(--black)  calc(var(--stripe)) calc(var(--stripe)*2)
-    );
+footer article{
+    background-color: var(--color-background-footer-ondtdek);
+    padding-right: 2em;
 }
 
-header a:nth-of-type(1) {
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+main ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 0;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h2:nth-of-type(1){
+    font-family: larken;
+}
+
+main a {
     background-color: var(--color-background-footer-ondtdek);
 }
 
-h1, h2, h3, h4, p{
-    font-family: "Larken";
+
+a :hover {
+    background-color: white;
+}
+
+
+ul {
+    display: flex;
+    gap: 1em;
+
+}
+
+footer article{
+    padding-left: 1.5em;
+}
+
+footer article nav svg {
+    display: flex;
+    justify-content: space-between;
+}
+/* volgende code gemaakt samen met studentassistent*/
+footer article nav svg {
+    max-height: 2.4em;
+    aspect-ratio: 1; 
+    background-color: white;
+    color: var(--color-background-footer-ondtdek);
+    border-radius: 50%;
+    padding-bottom: 0.6em;
+    padding-top: 0.6em;
+}
+
+footer article input{
+    border-bottom:  2px,#BD1C1E;
+    background-color: var(--color-background-footer-ondtdek);
+    transition: 0.4s ease-in-out;
     color: white;
 }
 
-header h1, header h2 {
-    color: var(--color-background-footer-ondtdek);
+input[type=text]:focus {
+  width: 100%;
 }
+
 
 footer section ul {
     display: flex;
@@ -401,4 +297,212 @@ article ul {
 
 p {
     margin-bottom: 0em;
+}
+
+footer button {
+    margin-bottom: 2em;
+}
+
+article nav a {
+    background-color: transparent;
+    list-style-type: none;
+}
+
+
+article nav {
+    display: flex;
+    list-style-type: none;
+}
+
+section svg {
+    max-width: 9%;
+    max-height: 9%;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    color: white;
+}
+
+/* code over warning tape is gemaakt met gebruik van AI en met overzicht van een studentassistent */
+.warning-tape{
+  /* Instelbare variabelen */
+  --angle: -45deg;        /* hoek van de strepen */
+  --stripe: 14px;        /* breedte per kleur */
+  --yellow: #fff;     /* geel */
+  --black:  transparent;        /* zwart */
+
+  width: 100%;
+  height: 30px;
+
+  background:
+    repeating-linear-gradient(
+      var(--angle),
+      var(--yellow) 0 calc(var(--stripe)),
+      var(--black)  calc(var(--stripe)) calc(var(--stripe)*2)
+    );
+}
+
+
+/* menu van de filter */
+
+form {
+	background-color:var(--color-teylers-wit);
+	
+	max-height:100vh;
+	
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	overflow-y:auto;
+	
+	translate:0 100%;
+	
+	transition:.5s;
+	
+	
+	display:flex;
+	flex-direction:column;
+
+    z-index: 3;
+	
+/* 	display:grid; */
+/* 	grid-template-columns:1fr max-content; */
+	
+}
+
+
+main search input:nth-of-type(1)::placeholder {
+  font-size: x-large;
+  opacity: 0.5;
+      z-index: 3;
+}
+
+main search input:nth-of-type(1){
+    padding-top: 1em;
+    width: 28em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+        z-index: 3;
+}
+
+search {
+    display: flex;
+    justify-content: space-between;
+        z-index: 3;
+}
+
+label {
+    padding-top: 1em;
+        z-index: 3;
+}
+
+input {
+    background-color: var(--color-teylers-wit);
+        z-index: 3;
+}
+
+
+form search,
+form > label,
+form details {
+	grid-column:span 2;
+        z-index: 3;
+}
+
+
+form.is-open {
+	translate:0 0;
+        z-index: 3;
+}
+
+details label {
+	display:block;
+        z-index: 3;
+}
+
+summary {
+	list-style:none;
+	
+	padding:.5em;
+	
+	display:flex;
+	justify-content:space-between;
+
+    padding-bottom: 2em;
+        z-index: 3;
+}
+
+summary::after {
+	content:"▼";
+	transition:.5s;
+        z-index: 3;
+}
+
+details[open] summary::after  {
+	rotate:180deg;
+        z-index: 3;
+}
+
+
+form div {
+	padding:1em;
+        z-index: 3;
+}
+
+
+main section form div:nth-of-type(1) {
+ 	background-color:var(--color-background-header-ondtdek);
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+    padding-bottom: 0em;
+    padding-top: 0em;
+    padding-right: 0em;
+    z-index: 3;
+}
+
+main section form div:nth-of-type(1) button {
+    justify-content: flex-end;
+    border: none;
+    background-color: var(--color-background-header-ondtdek);
+    font-size: x-large;
+    padding-left: 11em;
+    font-family: "larken";
+    color: var(--color-text);
+        z-index: 3;
+}
+main section form div:nth-of-type(2) {
+/* 	background-color:green; */
+	flex-grow:1;
+	
+	overflow:auto;
+        z-index: 3;
+    font-size: large;
+}
+
+main section form div:nth-of-type(3) {
+	background-color:var(--color-background-footer-ondtdek);
+	display:flex;
+	align-items:center;
+    justify-content: center;
+	    z-index: 3;
+}
+
+main section form div:nth-of-type(3) button {
+    left: 0;
+    right: 0;
+    width: 90%;
+    font-size: medium;
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
+    align-self: center;
+    background-color: var(--color-teylers-wit);
+    border: none;
+        z-index: 3;
 }
